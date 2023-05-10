@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,500&display=swap"
+);
+
+html {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden !important;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button,
+select,
+input,
+textarea {
+    font: inherit;
+}
+
+hr {
+    width: 85px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+::-moz-selection {
+    background: #fddde8;
+    color: #9796b7;
+    text-shadow: none;
+}
+
+::selection {
+    background: #4dcbd7;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7C5FB3 !important;
+    border-radius: 1px;
+    border: 3px solid #7C5FB3;
+}
+
+body::-webkit-scrollbar-track {
+    background: #9e9e9e47;
+}
+
+
+.invisible {
+    visibility: hidden;
+}
+/* background screen */
+.main{
+    height: 100vh;
+    width: 100%;
+    background:#e3f9ff ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* calculator */
+.calculator{
+    background: #3a4452;
+    padding: 25px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px;
+}
+.displayRow{
+    display: flex;
+    justify-content: flex-end;
+    margin :20px 0;
+}
+form .displayRow input{
+    text-align: right;
+    font-size: 45px;
+    box-shadow: none;
+    flex: 1;
+}
+
+form .row5 input:nth-child(3){
+    width: 145px;
+}
+form input.operator{
+    color: #33ffd8;
+
+}
