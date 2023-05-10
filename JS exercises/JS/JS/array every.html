@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <h2>Array every</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const numbers = [20, 98, 23, 1, 65];
+        let allOver10 = numbers.every(myFunction);
+
+        document.getElementById("demo").innerHTML = "All over 10 is " + allOver10;
+
+        function myFunction(value, index, array) {
+            return value > 10;
+        }
+    </script>
+
+
+</body>
+
+</html>

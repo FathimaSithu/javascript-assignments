@@ -1,0 +1,146 @@
+html {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden !important;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button,
+select,
+input,
+textarea {
+    font: inherit;
+}
+
+hr {
+    width: 85px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+::-moz-selection {
+    background: #fddde8;
+    color: #9796b7;
+    text-shadow: none;
+}
+
+::selection {
+    background: #4dcbd7;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7C5FB3 !important;
+    border-radius: 1px;
+    border: 3px solid #7C5FB3;
+}
+
+body::-webkit-scrollbar-track {
+    background: #9e9e9e47;
+}
+
+
+.invisible {
+    visibility: hidden;
+}
+
+
+.commonPadding {
+    padding: 0 8%;
+}
+.upload {
+    display: block;
+    width: 110px;
+    background: rgb(226, 225, 225);
+    color: black;
+    margin: 15px 0;
+    padding: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.inputFile{
+    display: none;
+}

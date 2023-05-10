@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Math trunc</h1>
+<h2>Returns the integer part</h2>
+<p id="myNumber">Enter a number</p>
+<input type="number" id="input-field" onchange="myFunction()">
+<span> </span><p id="demo"></p>
+<script>
+function myFunction() {
+  var x = document.getElementById("input-field").value;
+  document.getElementById("demo").innerHTML = "Your output is : " + Math.trunc((x));
+}
+</script>
+
+</body>
+</html>

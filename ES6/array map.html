@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Array map</h1>
+<h2>To itearate array</h2>
+<ul id="list"></ul>
+
+
+<script>
+const data = [5,6,7,8,9];
+const list  = document.getElementById('list');
+ 
+window.onload = () => {
+  list.innerHTML = data.map(i => `<li>${i}</li>`).join('');
+};</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>fibonacci series</h1>
+    <label >Enter n1</label>
+    <input type="number" id="input-fieldn1"  />
+    <label >Enter n2</label>
+    <input type="number" id="input-fieldn2" />
+    <label>Enter your limit</label>
+    <input type="number" id="input-field" onchange="myFunction()" />
+    <ul id="list"></ul>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("input-field").value;
+            const list = document.getElementById('list');
+            let numbers = [];
+            let n1 = parseInt(document.getElementById('input-fieldn1').value);
+            let n2 = parseInt(document.getElementById('input-fieldn2').value);
+            let nextTerm;
+            for (i = 1; i <= x; i++) {
+                numbers.push(n1);
+                nextTerm = n1 + n2;
+                n1 = n2;
+                n2 = nextTerm;
+            }
+            list.innerHTML = numbers.map(i => `<li>${i}</li>`).join('');
+        }
+    </script>
+</body>
+
+</html>

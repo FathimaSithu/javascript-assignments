@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <h2>Array some</h2>
+
+    <p id="demo"></p>
+
+    <script>
+      const numbers = [20, 98, 23, 1, 65];
+      let someOver10 = numbers.some(myFunction);
+
+      document.getElementById("demo").innerHTML =
+        "Some over 10 is " + someOver10;
+
+      function myFunction(value, index, array) {
+        return value > 10;
+      }
+    </script>
+  </body>
+</html>

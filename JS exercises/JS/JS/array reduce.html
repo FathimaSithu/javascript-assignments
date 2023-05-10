@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <h2>Array reduce</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const numbers = [20, 98,23, 1, 65];
+        let sum = numbers.reduce(myFunction);
+
+        document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+        function myFunction(total, value, index, array) {
+            return total + value;
+        }
+    </script>
+
+
+</body>
+
+</html>
