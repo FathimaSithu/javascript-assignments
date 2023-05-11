@@ -1,3 +1,4 @@
+// for form validation
 function formValidation() {
     let name = document.myForm.name.value;
     let password = document.myForm.password.value;
@@ -6,13 +7,19 @@ function formValidation() {
     let confirmPassword = document.myForm.confirmPassword.value;
     let gender = document.myForm.gender.value;
     const education = document.querySelectorAll('input[type=checkbox]');
+    // const qualification = document.querySelectorAll('input[type=checkbox]').value;
     let isChecked = false;
-
+    data = { 'name': name, 'email': email, 'gender': gender };
+console.log(data);
     education.forEach((edu) => {
         if (edu.checked) {
             isChecked = true;
         }
     });
+    // qualification.forEach((qua) => {
+
+    //     console.log(" qualification " + qua);
+    // });
 
     if (name == null || name == "") {
         alert("Please enter your name");
@@ -43,5 +50,7 @@ function formValidation() {
         return false;
     }
 
+    localStorage.setItem('test_data', JSON.stringify(data));
 
 }
+
