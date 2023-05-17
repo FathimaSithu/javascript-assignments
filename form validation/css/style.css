@@ -1,0 +1,33 @@
+.wrap {
+    height: auto;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 30px 0; */
+}
+
+.topBar {
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+    padding: 20px 10px;
+}
+.content {
+    height: auto;
+    width: 50%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    margin-bottom: 25px;
+}

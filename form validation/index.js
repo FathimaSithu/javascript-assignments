@@ -8,13 +8,13 @@ function formValidation() {
     let gender = document.myForm.gender.value;
     const education = document.querySelectorAll('input[type=checkbox]');
     // const qualification = document.querySelectorAll('input[type=checkbox]').value;
-    const checkedValues = [];
     let isChecked = false;
-    data = { 'name': name, 'email': email, 'gender': gender, 'education': checkedValues };
+    data = { 'name': name, 'email': email, 'gender': gender };
+    
+console.log(data);
     education.forEach((edu) => {
         if (edu.checked) {
             isChecked = true;
-            checkedValues.push(edu.value);
         }
     });
     // qualification.forEach((qua) => {
@@ -52,14 +52,15 @@ function formValidation() {
     }
 
     localStorage.setItem('test_data', JSON.stringify(data));
+    
+    
 
 }
-
 function showData(){
     getData = [];
     getData = localStorage.getItem('test_data');
     alert(getData);
 }
-function clearData(){
-localStorage.removeItem('test_data');
-}
+function removeData(){
+    localStorage.removeItem('test_data');
+    }

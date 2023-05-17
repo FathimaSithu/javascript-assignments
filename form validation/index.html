@@ -10,32 +10,46 @@
 </head>
 
 <body>
-  <div>
-    <form name="myForm" action="" onsubmit="return formValidation()">
-      Name :
-      <input type="text" placeholder="Please enter your name" id="name" name="name" /><br /><br />
-      Password :
-      <input type="password" placeholder="Please enter your password" id="password" name="password" /><br /><br />
-      Confirm password :
-      <input type="password" placeholder="Please enter your password" id="confirmPassword"
-        name="confirmPassword" /><br /><br />
-      Email :
-      <input type="text" placeholder="Please enter your email id" id="email" name="email" /><br /><br />
-      Gender :
-      <input type="radio" id="male" name="gender" />Male
-      <input type="radio" id="female" name="gender" />Female <br /><br />
-      Education :
-      <input type="checkbox" id="graduate" name="graduate" value="graduate" /> Graduate
-      <input type="checkbox" id="masters" name="masters" value="masters" /> Masters
-      <br /><br />
+  <div class="wrap">
 
-      <input type="submit" />
+<div class="content">
+    <div class="topBar">
+      <div class="button">
+        <button onclick="return showData()">Show</button>
+        <button onclick="return removeData()">Clear</button>
+      </div>
+    </div>
+    <div class="main">
 
-    </form>
-    <button onclick="return showData()">Show</button>
-    <button onclick="return Data()">Clear</button>
+      <div class="form">
+        <form name="myForm" id="myForm" action="" onsubmit="return formValidation()">
+          Name :
+          <input type="text" placeholder="Please enter your name" id="name" name="name" /><br /><br />
+          Password :
+          <input type="password" placeholder="Please enter your password" id="password" name="password" /><br /><br />
+          Confirm password :
+          <input type="password" placeholder="Please enter your password" id="confirmPassword"
+            name="confirmPassword" /><br /><br />
+          Email :
+          <input type="text" placeholder="Please enter your email id" id="email" name="email" /><br /><br />
+          Gender :
+          <input type="radio" id="male" name="gender" value="male" />Male
+          <input type="radio" id="female" name="gender" value="female" />Female <br /><br />
+          Education :
+          <input type="checkbox" id="graduate" name="graduate" /> Graduate
+          <input type="checkbox" id="masters" name="masters" /> Masters
+          <br /><br />
+
+          <input type="submit" />
+
+        </form>
+
+      </div>
+
+    </div>
   </div>
 
+  </div>
   <script src="index.js"></script>
 </body>
 
