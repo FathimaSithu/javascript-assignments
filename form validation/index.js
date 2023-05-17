@@ -55,3 +55,11 @@ function formValidation() {
 
 }
 
+function showData(){
+    getData = [];
+    getData = localStorage.getItem('test_data');
+    alert(getData);
+}
+function clearData(){
+localStorage.removeItem('test_data');
+}

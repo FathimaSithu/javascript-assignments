@@ -1,56 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Form Validation</title>
-  </head>
 
-  <body>
-    <div>
-      <form name="myForm" action="" onsubmit="return formValidation()">
-        Name :
-        <input
-          type="text"
-          placeholder="Please enter your name"
-          id="name"
-          name="name"
-        /><br /><br />
-        Password :
-        <input
-          type="password"
-          placeholder="Please enter your password"
-          id="password"
-          name="password"
-        /><br /><br />
-        Confirm password :
-        <input
-          type="password"
-          placeholder="Please enter your password"
-          id="confirmPassword"
-          name="confirmPassword"
-        /><br /><br />
-        Email :
-        <input
-          type="text"
-          placeholder="Please enter your email id"
-          id="email"
-          name="email"
-        /><br /><br />
-        Gender :
-        <input type="radio" id="male" name="gender" />Male
-        <input type="radio" id="female" name="gender" />Female <br /><br />
-        Education :
-        <input type="checkbox" id="graduate" name="graduate" value="graduate" /> Graduate
-        <input type="checkbox" id="masters" name="masters" value="masters" /> Masters
-        <br /><br />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Form Validation</title>
+</head>
 
-        <input type="submit" />
-      </form>
-    </div>
+<body>
+  <div>
+    <form name="myForm" action="" onsubmit="return formValidation()">
+      Name :
+      <input type="text" placeholder="Please enter your name" id="name" name="name" /><br /><br />
+      Password :
+      <input type="password" placeholder="Please enter your password" id="password" name="password" /><br /><br />
+      Confirm password :
+      <input type="password" placeholder="Please enter your password" id="confirmPassword"
+        name="confirmPassword" /><br /><br />
+      Email :
+      <input type="text" placeholder="Please enter your email id" id="email" name="email" /><br /><br />
+      Gender :
+      <input type="radio" id="male" name="gender" />Male
+      <input type="radio" id="female" name="gender" />Female <br /><br />
+      Education :
+      <input type="checkbox" id="graduate" name="graduate" value="graduate" /> Graduate
+      <input type="checkbox" id="masters" name="masters" value="masters" /> Masters
+      <br /><br />
 
-    <script src="index.js"></script>
-  </body>
+      <input type="submit" />
+
+    </form>
+    <button onclick="return showData()">Show</button>
+    <button onclick="return Data()">Clear</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
