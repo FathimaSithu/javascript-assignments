@@ -52,10 +52,13 @@ console.log(data);
     }
 
     localStorage.setItem('test_data', JSON.stringify(data));
-  alert("Hello");
+    
+    success ();
+    
+}
+function success(){
     window.location.href = 'login.html';
     
-
 }
 function showData(){
     getData = [];
