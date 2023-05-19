@@ -11,41 +11,42 @@
 </head>
 
 <body>
-    <div class="main">
-        <form action="">
-            <div class="calculator">
-                <div class="heading">
-                    <h1>Age Calculator</h1>
+    <div class="wrap">
+        <div class="main">
+            <form action="">
+                <div class="calculator">
+                    <div class="heading">
+                        <h1>Age Calculator</h1>
+                    </div>
+                    <div class="block">
+                        <div class="date">
+                            <p class="title">Date</p>
+                            <input type="text" name="date" id="date" placeholder="dd" required="required" />
+                        </div>
+
+
+                        <div class="month">
+                            <p class="title">Month</p>
+                            <input type="text" name="month" id="month" placeholder="mm" required="required" />
+                        </div>
+                        <div class="year">
+                            <p class="title">Year</p>
+                            <input type="text" name="year" id="year" placeholder="yy" required="required" />
+
+                        </div>
+                    </div>
+
                 </div>
-                <div class="block">
-                    <div class="date">
-                        <p class="title">Date</p>
-                        <input type="text" name="date" id="date" placeholder="dd" required="required" />
-                    </div>
-
-
-                    <div class="month">
-                        <p class="title">Month</p>
-                        <input type="text" name="month" id="month" placeholder="mm" required="required" />
-                    </div>
-                    <div class="year">
-                        <p class="title">Year</p>
-                        <input type="text" name="year" id="year" placeholder="yy" required="required" />
-
-                    </div>
+                <div class="button">
+                    <input type="button" name="submit" value="Submit" onclick="age()" />
                 </div>
 
-            </div>
-            <div class="button">
-                <input type="button" name="submit" value="Submit" onclick="age()" />
-            </div>
 
+                <div id="age"></div>
 
-            <div id="age"></div>
-
-        </form>
+            </form>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 

@@ -9,7 +9,7 @@ function formValidation() {
     const education = document.querySelectorAll('input[type=checkbox]');
     // const qualification = document.querySelectorAll('input[type=checkbox]').value;
     let isChecked = false;
-    data = { 'name': name, 'email': email, 'gender': gender };
+    data = { 'name': name, 'email': email, 'gender': gender , 'password': password};
     
 console.log(data);
     education.forEach((edu) => {
@@ -52,7 +52,8 @@ console.log(data);
     }
 
     localStorage.setItem('test_data', JSON.stringify(data));
-    
+  alert("Hello");
+    window.location.href = 'login.html';
     
 
 }
@@ -63,4 +64,5 @@ function showData(){
 }
 function removeData(){
     localStorage.removeItem('test_data');
+    
     }

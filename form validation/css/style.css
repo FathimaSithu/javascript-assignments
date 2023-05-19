@@ -31,3 +31,10 @@
 .form {
     margin-bottom: 25px;
 }
+.formContent {
+    height: auto;
+    width: 25%;
+    display: flex;
+    background-color: antiquewhite;
+    padding: 30px;
+}
